@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <link rel="stylesheet" href="style.css"> 
+    <!-- linkação da pagina de estilização -->
+</head>
+<body>
+    <div class="container"> <!-- Está div contém todo nosso codigo dos cards. -->
+        <div class="card"> <!-- Está div e o nosso primeiro card. -->
+            <div class="content"> <!-- Está div E o conteudo do card. -->
+                <h2>01</h2> <!-- Está tag e o titulo numerico do card-->
+                <h3>Card Um</h3> <!-- É o titulo dentro do card.-->
+                <p> <!-- esta tag e o nosso texto no card. -->
+                    Olá, Me chamo Alexandre e sou desenvolvedor web!
+                </p>
+                <a href="#">Mais informaões</a> <!-- EStá tag e o botão dentro do card. -->
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2>02</h2>
+                <h3>Card Dois</h3>
+                <p>
+                    Olá, Me chamo Alexandre e sou desenvolvedor web!
+                </p>
+                <a href="#">Mais informaões</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2>03</h2>
+                <h3>Card Tres</h3>
+                <p>
+                    Olá, Me chamo Alexandre e sou desenvolvedor web!
+                </p>
+                <a href="#">Mais informaões</a>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <!-- essa tag e a linkção do javascript externo da  animação. -->
+    <script>
+    VanillaTilt.init(document.querySelectorAll(".card"),{
+        /* Abaixo temos os efeitos adicionais de espelhamento. */
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 1,
+    });
+    </script>
+
+</body>
+</html>
